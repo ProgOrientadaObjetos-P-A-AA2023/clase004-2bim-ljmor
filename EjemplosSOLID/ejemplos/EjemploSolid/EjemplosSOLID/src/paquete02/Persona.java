@@ -4,20 +4,15 @@ S — Single responsibility principle
  */
 package paquete02;
 
-
-import java.util.ArrayList;
-
-/**
- *
- * @author reroes
- */
 public class Persona {
     private String nombre;
     private int edad;
+    private Ciudad ciudad;
     
-    public Persona(String n, int e){
+    public Persona(String n, int e, Ciudad ciu){
         nombre = n;
         edad = e;
+        ciudad = ciu;
     }
     
     public void establecerNombre(String n){
@@ -35,6 +30,13 @@ public class Persona {
     public int obtenerEdad(){
         return edad;
     }
-    
+
+    public Ciudad obtenerCiudad() {
+        return ciudad;
+    }
+
+    public void establecerCiudad(Ciudad n) {
+        ciudad = n;
+    }
     
 }
