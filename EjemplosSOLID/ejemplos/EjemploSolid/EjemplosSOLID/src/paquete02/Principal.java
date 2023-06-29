@@ -32,7 +32,7 @@ public class Principal {
         op1.establecerEdadmaxima();
         System.out.printf("\nEdad máxima: %d\n",
                 op1.obtenerEdadmaxima());
-        
+
         op1.establecerListaCiudadesEstudiantes();
         System.out.printf("\nLista de ciudades:\n%s\n",
                 op1.obtenerListaCiudadesEstudiantes());
